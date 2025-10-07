@@ -24,5 +24,9 @@ int main(){
     printf("Quantos segundos a sua empresa trabalha por dia");
     scanf("%f", &horatotal);
 
-    horas_da_empresa(horatotal);
+    
+ horas_da_empresa(horatotal);
+
+ return 0;
 }
+
