@@ -11,4 +11,6 @@ int main(){
     printf("Digite qualquer coisa para ser imprimido: ");
     scanf("%s", &nome);
     imprimir(nome);
+
+return 0;
 }
