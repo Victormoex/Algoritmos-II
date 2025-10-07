@@ -35,4 +35,5 @@ int main(){
     printf("Qual é a media?: ");
     scanf("%f", &numero);
     media(numero);
+return 0;
 }
