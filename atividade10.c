@@ -15,4 +15,6 @@ int main(){
     printf("Digite um numero para verificar se ele é par ou impar");
     scanf("%d", &numero);
     verificar(numero);
+
+return 0;
 }
