@@ -27,4 +27,5 @@
    
    delta(a,b,c)
  
+return 0;
 }
