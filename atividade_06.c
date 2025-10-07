@@ -30,5 +30,5 @@ int retorno(int ano, int mes, int dia){
 
     retorno(anor,mesr,diar);
 
-
+return 0;
 }
