@@ -1,4 +1,4 @@
-
+#include<stdio.h>
 
 int fatorial(int valor1){
  int fatorial=1;
