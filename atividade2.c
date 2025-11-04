@@ -4,26 +4,33 @@
 struct aluno_calculo
 {
 
-    int ra=5009;
-    int char[30]="rogerio";
-    float notas[3]={2.6, 5.7, 7.8};
+    int ra;
+    char nome[30];
+    float notas[3];
 
 };
 
 int main()
 {
-    struct aluno_calculo=rogerio;
+    struct aluno_calculo a1;
+    a1.ra=5552;
+    a1.notas[0]=10.0;
+    a1.notas[1]=3.8;
+    a1.notas[2]=8.0;
+    
+ 
+    
+    scanf("%s",&a1.nome);
 
-    printf("O ra eh %d\n o nome eh %s\n "rogerio.ra,rogerio.char);
+    printf("O ra eh %d\n o nome eh %s\n ",a1.ra, a1.nome);
 
-        printf("as notas sao eh \n ")
+        printf("as notas sao eh \n ");
 
     for(int i=0;i<3;i++)
     {
-        printf("%d",rogerio.notas[i]);
+        printf("%.2f\n",a1.notas[i]);
 
     }
 
 
 
-}
