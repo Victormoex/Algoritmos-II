@@ -30,7 +30,8 @@ int main()
     {
         printf("%.2f\n",a1.notas[i]);
 
-    }
+    }   
+    
+    printf("O tamanho do byte do ra eh:%d \n O tamanho do byte do nome eh %d\n, O tamanho do byte do da nota eh %d\n", sizeof(a1.ra),sizeof(a1.notas),sizeof(a1.nome));
 
-
-
+}
