@@ -1,32 +1,24 @@
-#include<stdio.h>
+#include <stdio.h>
 
- float horas_da_empresa(float segundostotal){
-
-    float hora; 
-    float minuto;
-    float segundo;
-
-     hora=segundostotal/60;
-     minuto=hora*60;
+void horas_da_empresa(float segundostotal){
     
-    
- 
-    
-    printf("Sua empresa trabalha %f horas e %f minutos e %f segundos ", hora,minuto,segundo);
+    int horas = segundostotal / 3600;
+    int minutos = ((int)segundostotal % 3600) / 60;
+    int segundos = (int)segundostotal % 60;
 
- }
+    printf("Sua empresa trabalha %d horas, %d minutos e %d segundos.\n",
+           horas, minutos, segundos);
+}
 
+int main() {
 
-int main(){
-    
     float horatotal;
 
-    printf("Quantos segundos a sua empresa trabalha por dia");
+    printf("Quantos segundos a sua empresa trabalha por dia? ");
     scanf("%f", &horatotal);
 
-    
- horas_da_empresa(horatotal);
+    horas_da_empresa(horatotal);
 
- return 0;
+    return 0;
 }
 
