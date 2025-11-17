@@ -42,6 +42,6 @@ int valor[10];
 
     receber(valor);
 
-
+return 0;
 
 }
