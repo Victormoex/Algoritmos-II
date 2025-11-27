@@ -6,7 +6,7 @@ int main()
     float matriz[3][3];
     float *p;
 
-    p=&matriz[0][0];
+    p=matriz[0][0];
     
 
     for(int i=0; i<3; i++){
