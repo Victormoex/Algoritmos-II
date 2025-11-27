@@ -5,7 +5,7 @@ int main(){
 int numeros[10]={30,20,40,30,102,302,1,5,32,40};
 int *p1;
 
-p1 = &numeros[10];
+p1 = numeros
 
 for(int i=0; i <10; i++){
 
