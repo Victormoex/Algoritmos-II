@@ -1,49 +1,34 @@
-#include<stdio.h>
+#include <stdio.h>
 
 
-
-int dobro(int *g)
-{
-    for(int i=0; i<5; i++){
-    *g = *g *2;
-        g++;
-}
-    return *g;
-}
-
-
-
-
-
-
-
-
-int main()
+void dobro(int *g, int tamanho) 
 {
 
-    int vetorzao[5];
-
-    int *p;
-    
-    p=&vetorzao[0];
-        
-
-    while(p < &vetorzao[5])
+    for(int i=0; i < tamanho; i++) 
     {
+        g[i] = g[i] * 2;  
+    }
+}
+
+int main() 
+{
+    int vetorzao[5];
     
-        scanf("%d",p);
-        getchar();
     
-        p++;
-    
+    for(int i = 0; i < 5; i++)
+        {
+        printf("digite vetorzao ", );
+        scanf("%d", &vetorzao[i]);
     }
 
+    
+    dobro(vetorzao, 5);
 
-    dobro(p);
-
-    printf("Os valores dobrados sao eh: %d",&p);
-
+    printf("os valores dobrados sao: ");
+    for(int i = 0; i < 5; i++) {
+        printf("%d ", vetorzao[i]);
+    }
     
 
-
+    return 0;
 }
